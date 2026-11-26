@@ -87,6 +87,7 @@ function RepairChoice({ repairs }: { repairs: BookingFormProps['repairs'] }) {
        <legend className="mb-1 font-semibold">
          Repairs <span className="font-normal text-ink-soft">(optional)</span>
        </legend>
+       <p className="text-ink-soft">Not sure which one? A flat tyre counts as a small repair. If you are not sure, tick Check and we will look at it together.</p>
        {repairs.map((repair) => {
          // To show each repair's price too, replace the line under this comment with this line:
          //   const label = repair.name + ', ' + formatPrice(repair.price)
